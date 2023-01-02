@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		96E200F2295A603B00A09C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E200F1295A603B00A09C33 /* AppDelegate.swift */; };
-		96E200F6295A603B00A09C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E200F5295A603B00A09C33 /* ViewController.swift */; };
-		96E200F9295A603B00A09C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E200F7295A603B00A09C33 /* Main.storyboard */; };
 		96E200FB295A603C00A09C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E200FA295A603C00A09C33 /* Assets.xcassets */; };
 		96E200FE295A603C00A09C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E200FC295A603C00A09C33 /* LaunchScreen.storyboard */; };
+		96E201062963699E00A09C33 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96E201052963699E00A09C33 /* README.md */; };
+		96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2010729636ED500A09C33 /* PreferenceVC.swift */; };
+		96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E2010929636F0000A09C33 /* Preference.storyboard */; };
+		96E201142963764700A09C33 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 96E201132963764700A09C33 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96E200EE295A603B00A09C33 /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E200F1295A603B00A09C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96E200F5295A603B00A09C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		96E200F8295A603B00A09C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E200FA295A603C00A09C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E200FD295A603C00A09C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E200FF295A603C00A09C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E201052963699E00A09C33 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96E2010729636ED500A09C33 /* PreferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceVC.swift; sourceTree = "<group>"; };
+		96E2010929636F0000A09C33 /* Preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preference.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E201142963764700A09C33 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +58,87 @@
 		96E200F0295A603B00A09C33 /* Homework2 */ = {
 			isa = PBXGroup;
 			children = (
-				96E200F1295A603B00A09C33 /* AppDelegate.swift */,
-				96E200F5295A603B00A09C33 /* ViewController.swift */,
-				96E200F7295A603B00A09C33 /* Main.storyboard */,
-				96E200FA295A603C00A09C33 /* Assets.xcassets */,
-				96E200FC295A603C00A09C33 /* LaunchScreen.storyboard */,
-				96E200FF295A603C00A09C33 /* Info.plist */,
+				96E2010B29636F6300A09C33 /* App */,
+				96E2010C29636F8800A09C33 /* Screens */,
 			);
 			path = Homework2;
+			sourceTree = "<group>";
+		};
+		96E2010B29636F6300A09C33 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				96E201052963699E00A09C33 /* README.md */,
+				96E201112963702000A09C33 /* Delegate */,
+				96E201102963701500A09C33 /* View */,
+				96E2010F29636FF200A09C33 /* Assets */,
+				96E2010E29636FE000A09C33 /* Plists */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		96E2010C29636F8800A09C33 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				96E2010D29636FBD00A09C33 /* PreferenceScreen */,
+				96E2011529637A8300A09C33 /* WeatherScreen */,
+				96E2011629637A9600A09C33 /* WeatherDetailScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		96E2010D29636FBD00A09C33 /* PreferenceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				96E2010929636F0000A09C33 /* Preference.storyboard */,
+				96E2010729636ED500A09C33 /* PreferenceVC.swift */,
+			);
+			path = PreferenceScreen;
+			sourceTree = "<group>";
+		};
+		96E2010E29636FE000A09C33 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				96E200FF295A603C00A09C33 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		96E2010F29636FF200A09C33 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				96E200FA295A603C00A09C33 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		96E201102963701500A09C33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96E200FC295A603C00A09C33 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96E201112963702000A09C33 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				96E200F1295A603B00A09C33 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		96E2011529637A8300A09C33 /* WeatherScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeatherScreen;
+			sourceTree = "<group>";
+		};
+		96E2011629637A9600A09C33 /* WeatherDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeatherDetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +157,9 @@
 			dependencies = (
 			);
 			name = Homework2;
+			packageProductDependencies = (
+				96E201132963764700A09C33 /* Moya */,
+			);
 			productName = Homework2;
 			productReference = 96E200EE295A603B00A09C33 /* Homework2.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 96E200E5295A603B00A09C33;
+			packageReferences = (
+				96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 96E200EF295A603B00A09C33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,7 +207,8 @@
 			files = (
 				96E200FE295A603C00A09C33 /* LaunchScreen.storyboard in Resources */,
 				96E200FB295A603C00A09C33 /* Assets.xcassets in Resources */,
-				96E200F9295A603B00A09C33 /* Main.storyboard in Resources */,
+				96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */,
+				96E201062963699E00A09C33 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E200F6295A603B00A09C33 /* ViewController.swift in Sources */,
+				96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */,
 				96E200F2295A603B00A09C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		96E200F7295A603B00A09C33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96E200F8295A603B00A09C33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		96E200FC295A603C00A09C33 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,10 +361,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQM8T6BKPB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Homework2/Info.plist;
+				INFOPLIST_FILE = Homework2/App/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Preference;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -314,10 +390,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQM8T6BKPB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Homework2/Info.plist;
+				INFOPLIST_FILE = Homework2/App/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Preference;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -356,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96E201132963764700A09C33 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96E200E6295A603B00A09C33 /* Project object */;
 }

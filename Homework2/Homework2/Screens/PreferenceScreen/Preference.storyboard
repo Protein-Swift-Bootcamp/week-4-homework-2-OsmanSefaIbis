@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tyL-MB-0JE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PreferenceVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PreferenceVC" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR0-ra-iZ7">
+                                <rect key="frame" x="83.000000000000014" y="133" width="230.33333333333337" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ddj-Z0-S3f"/>
+                                    <constraint firstAttribute="height" constant="30" id="gO8-7S-aZK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Open Weather API">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="27"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="27"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9t-VJ-RMj">
+                                <rect key="frame" x="40" y="223" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CCW-hj-8IM"/>
+                                    <constraint firstAttribute="width" constant="60" id="Upy-OF-3xW"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="City: ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf4-93-Kc7">
+                                <rect key="frame" x="40" y="283" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="dQE-Jp-09d"/>
+                                    <constraint firstAttribute="height" constant="30" id="nI4-2K-0YG"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Longitude:">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-Hj-FHK">
+                                <rect key="frame" x="40" y="323" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6mY-t5-CTX"/>
+                                    <constraint firstAttribute="height" constant="30" id="IG2-EW-6Qw"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Latitude: ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-Bm-clu">
+                                <rect key="frame" x="176.33333333333337" y="223" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hYm-Bx-fe2"/>
+                                    <constraint firstAttribute="height" constant="30" id="nah-iu-AQA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="McL-fj-44I">
+                                <rect key="frame" x="176.33333333333337" y="283" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AIE-xA-qFZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="vU6-45-Bhv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-aH-O74">
+                                <rect key="frame" x="176.33333333333337" y="323" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SXp-Bj-lum"/>
+                                    <constraint firstAttribute="height" constant="30" id="zlw-kg-htm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNj-0z-VLB">
+                                <rect key="frame" x="40" y="383" width="86" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pin Map"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xR0-ra-iZ7" secondAttribute="trailing" constant="83" id="1Eh-bK-8gH"/>
+                            <constraint firstItem="UxX-Bm-clu" firstAttribute="top" secondItem="xR0-ra-iZ7" secondAttribute="bottom" constant="60" id="5NH-A9-QQK"/>
+                            <constraint firstItem="8Dw-aH-O74" firstAttribute="top" secondItem="McL-fj-44I" secondAttribute="bottom" constant="10" id="CzV-h3-U49"/>
+                            <constraint firstItem="McL-fj-44I" firstAttribute="top" secondItem="UxX-Bm-clu" secondAttribute="bottom" constant="30" id="IL3-0f-kcT"/>
+                            <constraint firstItem="xR0-ra-iZ7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="83" id="Kvi-rn-f6k"/>
+                            <constraint firstItem="PNj-0z-VLB" firstAttribute="top" secondItem="cBs-Hj-FHK" secondAttribute="bottom" constant="30" id="Rjs-gL-Ic0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Dw-aH-O74" secondAttribute="trailing" constant="20" id="Y9y-Af-gaV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UxX-Bm-clu" secondAttribute="trailing" constant="20" id="YKv-Ax-aib"/>
+                            <constraint firstItem="cBs-Hj-FHK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="ZJM-fk-Ika"/>
+                            <constraint firstItem="xR0-ra-iZ7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="aTQ-3L-XiB"/>
+                            <constraint firstItem="PNj-0z-VLB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="iVX-km-ec1"/>
+                            <constraint firstItem="cBs-Hj-FHK" firstAttribute="top" secondItem="vf4-93-Kc7" secondAttribute="bottom" constant="10" id="kCI-v6-sDV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="McL-fj-44I" secondAttribute="trailing" constant="20" id="kfX-Zo-DxY"/>
+                            <constraint firstItem="vf4-93-Kc7" firstAttribute="top" secondItem="a9t-VJ-RMj" secondAttribute="bottom" constant="30" id="t3D-Uu-uup"/>
+                            <constraint firstItem="a9t-VJ-RMj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="vI0-x2-wJU"/>
+                            <constraint firstItem="vf4-93-Kc7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="xqi-In-Dyo"/>
+                            <constraint firstItem="a9t-VJ-RMj" firstAttribute="top" secondItem="xR0-ra-iZ7" secondAttribute="bottom" constant="60" id="zfF-ZJ-Ejo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ytX-fj-BPE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982.4427480916029" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2ih-4M-TCA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyL-MB-0JE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdg-lw-rCZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xCC-Nv-OYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-m2-lPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.7251908396945" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
