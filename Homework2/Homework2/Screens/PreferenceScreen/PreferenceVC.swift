@@ -17,10 +17,15 @@ class PreferenceVC: UIViewController {
     
     @IBOutlet weak var LatitudeTF: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    
+    
+    
 
     @IBAction func SubmitTapped(_ sender: Any) {
         

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tyL-MB-0JE">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,29 +14,31 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="PreferenceVC" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR0-ra-iZ7">
-                                <rect key="frame" x="83.000000000000014" y="133" width="230.33333333333337" height="30"/>
+                                <rect key="frame" x="83.000000000000014" y="121" width="195.33333333333337" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2oB-bl-AhX"/>
                                     <constraint firstAttribute="width" constant="250" id="Ddj-Z0-S3f"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="Ize-gi-ACa"/>
                                     <constraint firstAttribute="height" constant="30" id="gO8-7S-aZK"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Open Weather API">
                                         <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="27"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="26" name=".SFNS-Bold"/>
                                             <font key="NSOriginalFont" metaFont="systemBold" size="27"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9t-VJ-RMj">
-                                <rect key="frame" x="40" y="223" width="60" height="30"/>
+                                <rect key="frame" x="40" y="211" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CCW-hj-8IM"/>
                                     <constraint firstAttribute="width" constant="60" id="Upy-OF-3xW"/>
@@ -44,7 +46,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="City: ">
                                         <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSFont" metaFont="systemBold" size="23"/>
                                             <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -53,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf4-93-Kc7">
-                                <rect key="frame" x="40" y="283" width="120" height="30"/>
+                                <rect key="frame" x="40" y="271" width="120" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="dQE-Jp-09d"/>
                                     <constraint firstAttribute="height" constant="30" id="nI4-2K-0YG"/>
@@ -61,14 +63,14 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Longitude:">
                                         <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSFont" metaFont="system" size="23"/>
                                             <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="25"/>
+                                            <font key="NSFont" metaFont="system" size="23"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -76,7 +78,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-Hj-FHK">
-                                <rect key="frame" x="40" y="323" width="100" height="30"/>
+                                <rect key="frame" x="40" y="316" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6mY-t5-CTX"/>
                                     <constraint firstAttribute="height" constant="30" id="IG2-EW-6Qw"/>
@@ -84,7 +86,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Latitude: ">
                                         <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="25"/>
+                                            <font key="NSFont" metaFont="systemBold" size="23"/>
                                             <font key="NSOriginalFont" metaFont="systemBold" size="25"/>
                                         </attributes>
                                     </fragment>
@@ -92,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-Bm-clu">
-                                <rect key="frame" x="176.33333333333337" y="223" width="200" height="30"/>
+                                <rect key="frame" x="131.33333333333334" y="211" width="200.00000000000003" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="hYm-Bx-fe2"/>
                                     <constraint firstAttribute="height" constant="30" id="nah-iu-AQA"/>
@@ -101,7 +103,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="McL-fj-44I">
-                                <rect key="frame" x="176.33333333333337" y="283" width="200" height="30"/>
+                                <rect key="frame" x="131.33333333333334" y="271" width="200.00000000000003" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="AIE-xA-qFZ"/>
                                     <constraint firstAttribute="height" constant="30" id="vU6-45-Bhv"/>
@@ -110,7 +112,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-aH-O74">
-                                <rect key="frame" x="176.33333333333337" y="323" width="200" height="30"/>
+                                <rect key="frame" x="155" y="311" width="176.33333333333337" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="SXp-Bj-lum"/>
                                     <constraint firstAttribute="height" constant="30" id="zlw-kg-htm"/>
@@ -119,7 +121,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se2-9l-PHr">
-                                <rect key="frame" x="276.33333333333331" y="383" width="80" height="30"/>
+                                <rect key="frame" x="231.33333333333337" y="371" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8FC-ry-DmM"/>
                                     <constraint firstAttribute="width" constant="80" id="wdZ-Du-osD"/>
@@ -131,7 +133,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNj-0z-VLB">
-                                <rect key="frame" x="40" y="383" width="90" height="30"/>
+                                <rect key="frame" x="40" y="376" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="lHl-Kp-JDf"/>
                                     <constraint firstAttribute="height" constant="30" id="o4Y-UC-ZJa"/>
@@ -149,18 +151,19 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xR0-ra-iZ7" secondAttribute="trailing" constant="83" id="1Eh-bK-8gH"/>
                             <constraint firstItem="UxX-Bm-clu" firstAttribute="top" secondItem="xR0-ra-iZ7" secondAttribute="bottom" constant="60" id="5NH-A9-QQK"/>
                             <constraint firstItem="se2-9l-PHr" firstAttribute="top" secondItem="8Dw-aH-O74" secondAttribute="bottom" constant="30" id="69B-fx-INs"/>
+                            <constraint firstItem="8Dw-aH-O74" firstAttribute="leading" secondItem="cBs-Hj-FHK" secondAttribute="trailing" constant="15" id="7gP-V9-ahy"/>
                             <constraint firstItem="8Dw-aH-O74" firstAttribute="top" secondItem="McL-fj-44I" secondAttribute="bottom" constant="10" id="CzV-h3-U49"/>
                             <constraint firstItem="McL-fj-44I" firstAttribute="top" secondItem="UxX-Bm-clu" secondAttribute="bottom" constant="30" id="IL3-0f-kcT"/>
                             <constraint firstItem="xR0-ra-iZ7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="83" id="Kvi-rn-f6k"/>
                             <constraint firstItem="PNj-0z-VLB" firstAttribute="top" secondItem="cBs-Hj-FHK" secondAttribute="bottom" constant="30" id="Rjs-gL-Ic0"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Dw-aH-O74" secondAttribute="trailing" constant="20" id="Y9y-Af-gaV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UxX-Bm-clu" secondAttribute="trailing" constant="20" id="YKv-Ax-aib"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Dw-aH-O74" secondAttribute="trailing" constant="30" id="Y9y-Af-gaV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UxX-Bm-clu" secondAttribute="trailing" constant="30" id="YKv-Ax-aib"/>
                             <constraint firstItem="cBs-Hj-FHK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="ZJM-fk-Ika"/>
                             <constraint firstItem="xR0-ra-iZ7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="aTQ-3L-XiB"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="se2-9l-PHr" secondAttribute="trailing" constant="40" id="heV-d3-d74"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="se2-9l-PHr" secondAttribute="trailing" constant="50" id="heV-d3-d74"/>
                             <constraint firstItem="PNj-0z-VLB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="iVX-km-ec1"/>
-                            <constraint firstItem="cBs-Hj-FHK" firstAttribute="top" secondItem="vf4-93-Kc7" secondAttribute="bottom" constant="10" id="kCI-v6-sDV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="McL-fj-44I" secondAttribute="trailing" constant="20" id="kfX-Zo-DxY"/>
+                            <constraint firstItem="cBs-Hj-FHK" firstAttribute="top" secondItem="vf4-93-Kc7" secondAttribute="bottom" constant="15" id="kCI-v6-sDV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="McL-fj-44I" secondAttribute="trailing" constant="30" id="kfX-Zo-DxY"/>
                             <constraint firstItem="vf4-93-Kc7" firstAttribute="top" secondItem="a9t-VJ-RMj" secondAttribute="bottom" constant="30" id="t3D-Uu-uup"/>
                             <constraint firstItem="a9t-VJ-RMj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="vI0-x2-wJU"/>
                             <constraint firstItem="vf4-93-Kc7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="xqi-In-Dyo"/>
@@ -184,7 +187,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyL-MB-0JE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdg-lw-rCZ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
