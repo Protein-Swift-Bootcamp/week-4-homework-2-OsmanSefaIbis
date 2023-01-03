@@ -14,6 +14,8 @@
 		96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2010729636ED500A09C33 /* PreferenceVC.swift */; };
 		96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E2010929636F0000A09C33 /* Preference.storyboard */; };
 		96E201142963764700A09C33 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 96E201132963764700A09C33 /* Moya */; };
+		96E201192963885500A09C33 /* PinMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E201182963885500A09C33 /* PinMapVC.swift */; };
+		96E2011B29638AA200A09C33 /* PinMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E2011A29638AA200A09C33 /* PinMap.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		96E201052963699E00A09C33 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96E2010729636ED500A09C33 /* PreferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceVC.swift; sourceTree = "<group>"; };
 		96E2010929636F0000A09C33 /* Preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preference.storyboard; sourceTree = "<group>"; };
+		96E201182963885500A09C33 /* PinMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMapVC.swift; sourceTree = "<group>"; };
+		96E2011A29638AA200A09C33 /* PinMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinMap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		96E2010C29636F8800A09C33 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				96E201172963882600A09C33 /* PinMapScreen */,
 				96E2010D29636FBD00A09C33 /* PreferenceScreen */,
 				96E2011529637A8300A09C33 /* WeatherScreen */,
 				96E2011629637A9600A09C33 /* WeatherDetailScreen */,
@@ -139,6 +144,15 @@
 			children = (
 			);
 			path = WeatherDetailScreen;
+			sourceTree = "<group>";
+		};
+		96E201172963882600A09C33 /* PinMapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				96E201182963885500A09C33 /* PinMapVC.swift */,
+				96E2011A29638AA200A09C33 /* PinMap.storyboard */,
+			);
+			path = PinMapScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,7 @@
 				96E200FB295A603C00A09C33 /* Assets.xcassets in Resources */,
 				96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */,
 				96E201062963699E00A09C33 /* README.md in Resources */,
+				96E2011B29638AA200A09C33 /* PinMap.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E201192963885500A09C33 /* PinMapVC.swift in Sources */,
 				96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */,
 				96E200F2295A603B00A09C33 /* AppDelegate.swift in Sources */,
 			);
