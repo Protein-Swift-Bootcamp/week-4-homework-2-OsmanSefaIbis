@@ -52,7 +52,9 @@ class WeatherTableVC: UIViewController {
                 if let data = data{
                     do {
                         let decodedResponse = try! JSONDecoder().decode(WeatherInfo.self, from:data)
-                        self.weathersList = decodedResponse.list!
+                        if let list = decodedResponse.list{
+                            self.weathersList = list
+                        }
                         // Background threadden UI componentine erişmek istiyorsak Main threade almamız gerekiyor yoksa crash alırız
                         // Apple istiyorki, bütün UI componentleri Main thread içinden çağırmamız lazım --> En önemli UI kuralı
                         DispatchQueue.main.async {
@@ -96,10 +98,10 @@ extension WeatherTableVC: UITableViewDataSource{
         let humidityValue = weathersList[indexPath.row].main?.humidity!
         let feelsValue = weathersList[indexPath.row].main?.feelsLike
         
-        weatherCell.TempLabel.text = "\(tempValue)"
-        weatherCell.HumidityLabel.text = "\(humidityValue)"
-        weatherCell.WindLabel.text = "\(windValue)"
-        weatherCell.FeltTempLabel.text = "\(feelsValue)"
+        weatherCell.TempLabel.text = String(describing: tempValue!)
+        weatherCell.HumidityLabel.text = String(describing: humidityValue!)
+        weatherCell.WindLabel.text = String(describing: windValue!)
+        weatherCell.FeltTempLabel.text = String(describing: feelsValue)
 
         return weatherCell
     }
