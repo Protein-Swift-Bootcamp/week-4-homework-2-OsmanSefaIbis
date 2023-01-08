@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR0-ra-iZ7">
-                                <rect key="frame" x="83.000000000000014" y="121" width="195.33333333333337" height="30"/>
+                                <rect key="frame" x="83" y="121" width="224" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2oB-bl-AhX"/>
                                     <constraint firstAttribute="width" constant="250" id="Ddj-Z0-S3f"/>
@@ -29,7 +29,7 @@
                                     <fragment content="Open Weather API">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="26" name=".SFNS-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="systemBold" size="27"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-Bm-clu">
-                                <rect key="frame" x="131.33333333333334" y="211" width="200.00000000000003" height="30"/>
+                                <rect key="frame" x="160" y="211" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="hYm-Bx-fe2"/>
                                     <constraint firstAttribute="height" constant="30" id="nah-iu-AQA"/>
@@ -103,7 +103,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="McL-fj-44I">
-                                <rect key="frame" x="131.33333333333334" y="271" width="200.00000000000003" height="30"/>
+                                <rect key="frame" x="160" y="271" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="AIE-xA-qFZ"/>
                                     <constraint firstAttribute="height" constant="30" id="vU6-45-Bhv"/>
@@ -112,7 +112,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-aH-O74">
-                                <rect key="frame" x="155" y="311" width="176.33333333333337" height="30"/>
+                                <rect key="frame" x="155" y="311" width="205" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="SXp-Bj-lum"/>
                                     <constraint firstAttribute="height" constant="30" id="zlw-kg-htm"/>
@@ -121,7 +121,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se2-9l-PHr">
-                                <rect key="frame" x="231.33333333333337" y="371" width="80" height="30"/>
+                                <rect key="frame" x="260" y="371" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8FC-ry-DmM"/>
                                     <constraint firstAttribute="width" constant="80" id="wdZ-Du-osD"/>
@@ -129,7 +129,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                                 <connections>
-                                    <action selector="SubmitTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dhi-gs-6p6"/>
+                                    <action selector="SubmitTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TWC-MY-lcD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNj-0z-VLB">
@@ -197,7 +197,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-m2-lPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.7251908396945" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1203" y="-28"/>
         </scene>
     </scenes>
     <resources>

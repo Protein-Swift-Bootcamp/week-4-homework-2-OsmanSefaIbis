@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		969E6C0C296AF972003BB3BE /* WeatherTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E6C0B296AF972003BB3BE /* WeatherTableVC.swift */; };
+		969E6C12296AFB47003BB3BE /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969E6C11296AFB47003BB3BE /* Weather.storyboard */; };
+		969E6C16296AFDB4003BB3BE /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E6C14296AFDB4003BB3BE /* WeatherCell.swift */; };
+		969E6C17296AFDB4003BB3BE /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969E6C15296AFDB4003BB3BE /* WeatherCell.xib */; };
 		96E200F2295A603B00A09C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E200F1295A603B00A09C33 /* AppDelegate.swift */; };
 		96E200FB295A603C00A09C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E200FA295A603C00A09C33 /* Assets.xcassets */; };
 		96E200FE295A603C00A09C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E200FC295A603C00A09C33 /* LaunchScreen.storyboard */; };
 		96E201062963699E00A09C33 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96E201052963699E00A09C33 /* README.md */; };
 		96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2010729636ED500A09C33 /* PreferenceVC.swift */; };
 		96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E2010929636F0000A09C33 /* Preference.storyboard */; };
-		96E201142963764700A09C33 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 96E201132963764700A09C33 /* Moya */; };
 		96E201192963885500A09C33 /* PinMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E201182963885500A09C33 /* PinMapVC.swift */; };
 		96E2011B29638AA200A09C33 /* PinMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E2011A29638AA200A09C33 /* PinMap.storyboard */; };
 		96E2011F296433CB00A09C33 /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2011E296433CB00A09C33 /* OpenWeatherAPI.swift */; };
@@ -23,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		969E6C0B296AF972003BB3BE /* WeatherTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableVC.swift; sourceTree = "<group>"; };
+		969E6C11296AFB47003BB3BE /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		969E6C14296AFDB4003BB3BE /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		969E6C15296AFDB4003BB3BE /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		96E200EE295A603B00A09C33 /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E200F1295A603B00A09C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E200FA295A603C00A09C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,13 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E201142963764700A09C33 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		969E6C13296AFBDC003BB3BE /* WeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				969E6C14296AFDB4003BB3BE /* WeatherCell.swift */,
+				969E6C15296AFDB4003BB3BE /* WeatherCell.xib */,
+			);
+			path = WeatherCell;
+			sourceTree = "<group>";
+		};
 		96E200E5295A603B00A09C33 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +159,9 @@
 		96E2011529637A8300A09C33 /* WeatherScreen */ = {
 			isa = PBXGroup;
 			children = (
+				969E6C13296AFBDC003BB3BE /* WeatherCell */,
+				969E6C0B296AF972003BB3BE /* WeatherTableVC.swift */,
+				969E6C11296AFB47003BB3BE /* Weather.storyboard */,
 			);
 			path = WeatherScreen;
 			sourceTree = "<group>";
@@ -224,7 +242,6 @@
 			);
 			name = Homework2;
 			packageProductDependencies = (
-				96E201132963764700A09C33 /* Moya */,
 			);
 			productName = Homework2;
 			productReference = 96E200EE295A603B00A09C33 /* Homework2.app */;
@@ -255,7 +272,6 @@
 			);
 			mainGroup = 96E200E5295A603B00A09C33;
 			packageReferences = (
-				96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 96E200EF295A603B00A09C33 /* Products */;
 			projectDirPath = "";
@@ -272,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E200FE295A603C00A09C33 /* LaunchScreen.storyboard in Resources */,
+				969E6C12296AFB47003BB3BE /* Weather.storyboard in Resources */,
 				96E200FB295A603C00A09C33 /* Assets.xcassets in Resources */,
 				96E2010A29636F0000A09C33 /* Preference.storyboard in Resources */,
+				969E6C17296AFDB4003BB3BE /* WeatherCell.xib in Resources */,
 				96E201062963699E00A09C33 /* README.md in Resources */,
 				96E2011B29638AA200A09C33 /* PinMap.storyboard in Resources */,
 			);
@@ -286,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969E6C0C296AF972003BB3BE /* WeatherTableVC.swift in Sources */,
 				96E201192963885500A09C33 /* PinMapVC.swift in Sources */,
+				969E6C16296AFDB4003BB3BE /* WeatherCell.swift in Sources */,
 				96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */,
 				96E2012D2964541000A09C33 /* ForecastResponseModel.swift in Sources */,
 				96E201242964472100A09C33 /* Constant.swift in Sources */,
@@ -504,25 +524,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 13.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		96E201132963764700A09C33 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 96E201122963764700A09C33 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96E200E6295A603B00A09C33 /* Project object */;
 }
