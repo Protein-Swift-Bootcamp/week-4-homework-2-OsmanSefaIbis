@@ -10,6 +10,8 @@ Project Requirements
 
 Research Subject : UIActivityIndicator --> during data retrieval the spinner to indicate loading, learn about it.
 
+Research Subject Answer: 
+
 
 Selected API: Open Weather API, 2 endpoints are used to retrieve location based weather data.
 

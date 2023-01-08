@@ -10,7 +10,10 @@ import UIKit
 class WeatherCell: UITableViewCell {
     
     
-    @IBOutlet weak var temp: UILabel!
+    @IBOutlet weak var HumidityLabel: UILabel!
+    @IBOutlet weak var TempLabel: UILabel!
+    @IBOutlet weak var WindLabel: UILabel!
+    @IBOutlet weak var FeltTempLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

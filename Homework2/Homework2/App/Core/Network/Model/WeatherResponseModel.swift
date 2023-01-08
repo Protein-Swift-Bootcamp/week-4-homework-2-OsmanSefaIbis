@@ -11,7 +11,7 @@ import Foundation
 // MARK:   let welcome = try? JSONDecoder().decode(Welcome.self, from: jsonData)
 
 import Foundation
-
+/*
 // MARK: - WeatherInfo
 struct WeatherInfo: Decodable {
     let weather: [Weather]?
@@ -61,5 +61,49 @@ struct Wind: Decodable {
     let deg: Int?
     let gust: Double?
 }
+*/
+
+import Foundation
+
+// MARK: - Welcome
+struct WeatherInfo: Decodable {
+    let list: [List]?
+}
+
+// MARK: - List
+struct List: Decodable {
+    let main: Main?
+    let weather: [Weather]?
+    let wind: Wind?
+    
+}
+
+struct City: Decodable {
+    let id: Int?
+    let name: String?
+    let country: String?
+    let population, timezone, sunrise, sunset: Int?
+}
+
+// MARK: - Main
+struct Main: Decodable {
+    let temp, feelsLike, tempMin, tempMax: Double?
+    let pressure, seaLevel, grndLevel, humidity: Int?
+    let tempKf: Double?
+}
+
+
+// MARK: - Weather
+struct Weather: Decodable {
+    let main, description, icon: String?
+}
+
+// MARK: - Wind
+struct Wind: Decodable {
+    let speed: Double?
+    let deg: Int?
+    let gust: Double?
+}
+
 
 

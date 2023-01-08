@@ -22,7 +22,6 @@
 		96E2011F296433CB00A09C33 /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2011E296433CB00A09C33 /* OpenWeatherAPI.swift */; };
 		96E201242964472100A09C33 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E201232964472100A09C33 /* Constant.swift */; };
 		96E2012B296453F700A09C33 /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2012A296453F700A09C33 /* WeatherResponseModel.swift */; };
-		96E2012D2964541000A09C33 /* ForecastResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2012C2964541000A09C33 /* ForecastResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		96E2011E296433CB00A09C33 /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
 		96E201232964472100A09C33 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		96E2012A296453F700A09C33 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
-		96E2012C2964541000A09C33 /* ForecastResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,6 @@
 				96E201172963882600A09C33 /* PinMapScreen */,
 				96E2010D29636FBD00A09C33 /* PreferenceScreen */,
 				96E2011529637A8300A09C33 /* WeatherScreen */,
-				96E2011629637A9600A09C33 /* WeatherDetailScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -166,13 +163,6 @@
 			path = WeatherScreen;
 			sourceTree = "<group>";
 		};
-		96E2011629637A9600A09C33 /* WeatherDetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WeatherDetailScreen;
-			sourceTree = "<group>";
-		};
 		96E201172963882600A09C33 /* PinMapScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				96E2012A296453F700A09C33 /* WeatherResponseModel.swift */,
-				96E2012C2964541000A09C33 /* ForecastResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,7 +297,6 @@
 				96E201192963885500A09C33 /* PinMapVC.swift in Sources */,
 				969E6C16296AFDB4003BB3BE /* WeatherCell.swift in Sources */,
 				96E2010829636ED500A09C33 /* PreferenceVC.swift in Sources */,
-				96E2012D2964541000A09C33 /* ForecastResponseModel.swift in Sources */,
 				96E201242964472100A09C33 /* Constant.swift in Sources */,
 				96E200F2295A603B00A09C33 /* AppDelegate.swift in Sources */,
 				96E2012B296453F700A09C33 /* WeatherResponseModel.swift in Sources */,
